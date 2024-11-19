@@ -14,15 +14,27 @@ img{
     width: 100%;
 }
 
+em{
+    display: flex;
+    font-style: normal;
+    padding-left: 0.7em;
+
+}
+
 h2{
     color: hsl(14, 45%, 36%);
+    font-size: 2em;
 }
 
 li{
     padding: 10px;
 }
 
-p, li, h3{
+p, li, table{
+    font-size: 1.8em;
+}
+
+p, li, h3, table{
     font-family: "Outfit", sans-serif;
 }
 
@@ -62,6 +74,7 @@ section, .preparation{
 .preparation h3{
     color: hsl(332, 51%, 32%);
     padding-left: 40px;
+    font-size: 1.5em;
 }
 
 .preparation ul{
@@ -116,15 +129,19 @@ ul{
     display: inline-block;
     width: 1.5em;
     font-weight: bold;
-    margin-left: -1.5em;
-    padding-right: 20px;
+    margin-left: -0.8em;
+    /* padding-right: px; */
 }
-
 
 .instructions li{
     counter-increment: li;
 }
-
-p, li{
-    font-size: 32px;
+/* ****************************NUTRITION */
+.nutrition h2{
+    margin-bottom: 15px;
 }
+
+table{
+    margin: 20px;
+}
+
