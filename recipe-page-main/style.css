@@ -8,23 +8,29 @@
 body{
     font-family: "Young Serif", serif;
     padding: 20px;
+    font-size: 32px;
 }
 
-h3, h2{
+h2{
     color: hsl(14, 45%, 36%);
 }
 
-hr{
-    color: ;
+h3{
+    color:  hsl(332, 51%, 32%);
 }
 
-p, h3, li{
+hr{
+    color: hsl(30, 18%), 87%;
+}
+
+p, li{
     font-family: "Outfit", sans-serif;
     color:hsl(30, 10%, 34%);
 }
 
 section, .preparation{
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 20px 20px 20px 0;
 }
 
 span{
@@ -52,23 +58,59 @@ span{
     background-color: hsl(330, 100%, 98%);
 }
 
-.preparation h3, .preparation ul{
-    text-decoration-color:  hsl(332, 51%, 32%);
-    -moz-text-decoration-color:  hsl(332, 51%, 32%);
-}
-
 .preparation ul{
-    padding-left: 20px;
-    padding-top: 15px;
+    /* padding-left: 20px; */
+    /* padding-top: 15px; */
 }
 
-.preparation li{
-    padding: 10px;
+.preparation ul, .ingredient ul{
+    list-style: none;
 }
+
+.preparation li::before, .ingredient li::before{
+    padding: 10px;
+    content: "\2022";
+    color:  hsl(332, 51%, 32%);
+}
+
+.preparation li, .ingredient li{
+    padding: 10px;
+    
+}
+
 
 /******************INGREDIENTS******/
 ul, ol{
-    padding-left: 20px;
+    /* padding-left: 20px;
+     */
     padding-top: 15px;
    
 }
+
+.straight{
+    width: 100%;
+    border: 0.5px solid  hsl(32, 26%, 80%);
+}
+/* INSTRUCTIONS */
+.instructions ol{
+    margin-left: 10px;
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+.instructions ol li{
+    counter-increment: list-counter;
+    line-height: 40px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.instructions ol li::before{
+    content: counter(list-counter)".";
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    margin-right: 15px;
+    /* text-align: justify; */
+}
+
+
