@@ -11,7 +11,7 @@ body{
 }
 
 
-h2{
+h2, .mesure{
     color: hsl(14, 45%, 36%);
 }
 
@@ -36,7 +36,6 @@ section{
 span{
     font-weight: bold;
 }
-
 /*******************HEADER******************/
 .header header img, .preparation{
     border-radius: 15px;
@@ -76,17 +75,15 @@ span{
 }
 
 .preparation li::before{
-    padding: 10px 30px 10px 10px;
+    padding: 10px 30px 10px 5px;
     content: "\2022";
+    font-size: 35px;
 }
-
 
 .preparation li, .ingredient li{
     padding: 10px;
     
 }
-
-
 /******************INGREDIENTS******/
 ul, ol{
     /* padding-left: 20px;
@@ -109,7 +106,7 @@ ul, ol{
 }
 /* INSTRUCTIONS */
 .instructions ol{
-    margin-left: 10px;
+    margin-left: -10px;
     list-style: none;
     counter-reset: list-counter;
 }
@@ -118,15 +115,27 @@ ul, ol{
     counter-increment: list-counter;
     line-height: 40px;
     margin-left: 20px;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .instructions ol li::before{
     content: counter(list-counter)".";
     color: hsl(14, 45%, 36%);
     font-weight: bold;
-    margin-right: 15px;
-    /* text-align: justify; */
+    margin-right: 35px;
+}
+/* NUTRITION */
+.table{
+    display: flex;
+    margin: 20px 0 20px 64px;
 }
 
+.table p{
+    width: 50%;
+}
+
+.mesure{
+    font-weight: bold;
+    margin-left: -50px;
+}
 
