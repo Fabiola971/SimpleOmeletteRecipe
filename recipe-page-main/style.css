@@ -10,13 +10,14 @@ body{
     font-size: 32px;
 }
 
-h2{
+
 h2{
     color: hsl(14, 45%, 36%);
 }
 
-h3{
+h3, .preparation li::before{
     color:  hsl(332, 51%, 32%);
+    font-family: "Outfit", sans-serif;
 }
 
 hr{
@@ -25,10 +26,10 @@ hr{
 
 p, li{
     font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
 }
 
-section, .preparation{
-    /* padding: 20px; */
+section{
     padding: 20px 20px 20px 0;
 }
 
@@ -62,6 +63,7 @@ span{
 
 .preparation{
     background-color: hsl(330, 100%, 98%);
+    padding: 20px 20px 20px 30px;
 }
 
 .preparation ul{
@@ -69,15 +71,15 @@ span{
     /* padding-top: 15px; */
 }
 
-.preparation ul, .ingredient ul{
+.preparation ul, .ingredients ul{
     list-style: none;
 }
 
-.preparation li::before, .ingredient li::before{
-    padding: 10px;
+.preparation li::before{
+    padding: 10px 30px 10px 10px;
     content: "\2022";
-    color:  hsl(332, 51%, 32%);
 }
+
 
 .preparation li, .ingredient li{
     padding: 10px;
@@ -89,8 +91,16 @@ span{
 ul, ol{
     /* padding-left: 20px;
      */
-    padding-top: 15px;
-   
+    padding-top: 15px;  
+}
+
+.ingredients li::before{
+    content: "\25A0";
+    padding: 10px 40px 10px 10px;
+    color: hsl(14, 45%, 36%);
+    font-size: 15px;
+    position: relative;
+    top: -8px;
 }
 
 .straight{
