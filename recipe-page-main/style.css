@@ -97,6 +97,10 @@ ul, ol{
     border: 0.5px solid  hsl(32, 26%, 80%);
 }
 /* INSTRUCTIONS */
+.instructions{
+    position: relative;
+}
+
 .instructions em{
     font-style: normal;
     margin-inline-start: 62px;
@@ -106,6 +110,11 @@ ul, ol{
     margin-left: -10px;
     list-style: none;
     counter-reset: list-counter;
+}
+
+.instructions li:first-child::before{
+    content: counter(1);
+    margin-left: 6px;
 }
 
 .instructions ol li{
@@ -118,8 +127,9 @@ ul, ol{
     content: counter(list-counter)".";
     color: hsl(14, 45%, 36%);
     font-weight: bold;
-    margin-right: 35px;
+    margin-right: 35px;   
 }
+
 /* NUTRITION */
 .table{
     display: flex;
