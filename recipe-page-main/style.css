@@ -83,8 +83,13 @@ ul, ol{
     padding-top: 15px;  
 }
 
+.ingredients ul{}
+
 .ingredients ul li{
-    /* text-indent: 58px; */
+    position: relative;
+    /* padding: 10px 40px 10px 10px; */
+    text-indent: -60px;
+    padding-left: 70px;
 }
 
 .ingredients li::before{
