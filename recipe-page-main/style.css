@@ -72,19 +72,30 @@ span{
 .preparation li::before{
     content: "\2022";
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: sub;
     padding: 0 20px 0 5px;
     font-size: 25px;
 }
 
-.preparation li::before{
-    /* padding: 10px 30px 10px 50px;
-    font-size: 35px; */
+
+
+.preparation li, .ingredient li{
+    padding: 10px; 
+    position: relative;   
+}
+
+.preparation li:first-of-type::before{
+    vertical-align: top;
+    line-height: 2;
+
     
 }
 
-.preparation li, .ingredient li{
-    padding: 10px;    
+.preparation li em{
+    font-style: normal;
+    position: absolute;
+    top: 22px;
+    left: 34px;
 }
 /******************INGREDIENTS******/
 ul, ol{
@@ -108,6 +119,21 @@ ul, ol{
     position: relative;
     top: -8px;
 }
+
+.ingredients li:last-of-type::before{
+   top: 15px;
+
+}
+
+.ingredients li em{
+    display: block;
+    font-style: normal;
+    position: relative;
+    left: 23px;
+
+}
+
+
 
 .straight{
     width: 100%;
@@ -195,9 +221,7 @@ ul, ol{
    }
 
    .preparation li::before{
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0 30px 0 5px;
+        /* padding: 0 30px 0 5px; */
         font-size: 25px;
     }
 
