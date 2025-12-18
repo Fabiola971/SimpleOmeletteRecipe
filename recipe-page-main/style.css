@@ -135,34 +135,35 @@ ul, ol{
 
 
 
-.straight{
-    width: 100%;
+.straigh{
+    width: 80%;
+    
     border: 0.5px solid  hsl(32, 26%, 80%);
 }
 /* INSTRUCTIONS */
 
 .instructions ol{
     list-style: none;
-    counter-reset: list-counter;
-}
-
-.instructions li:first-child::before{
-    content: counter(1);
-    margin-left: 6px;
+    counter-reset: step;
+   
 }
 
 .instructions ol li{
-    counter-increment: list-counter;
-    line-height: 45px;
-    padding-left: 68px;
-    text-indent: -58px; 
+    counter-increment: step;
+    line-height: 2;
+    margin-bottom: 16px;
+    position: relative;
+    left: 34px;    
 }
 
 .instructions ol li::before{
-    content: counter(list-counter)".";
+    content: counter(step)".";
     color: hsl(14, 45%, 36%);
     font-weight: bold;
-    margin-right: 28px;   
+    position: absolute;
+    left: -30px;
+    
+    
 }
 
 /* NUTRITION */
