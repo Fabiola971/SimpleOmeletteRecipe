@@ -21,6 +21,7 @@ h3, .preparation li::before{
 
 hr{
     color: hsl(30, 18%), 87%;
+    width: 105%;
 }
 
 p, li{
@@ -150,7 +151,7 @@ ul, ol{
 
 .instructions ol li{
     counter-increment: step;
-    line-height: 2;
+    line-height: 1.8;
     margin-bottom: 16px;
     position: relative;
     left: 34px;    
@@ -161,15 +162,13 @@ ul, ol{
     color: hsl(14, 45%, 36%);
     font-weight: bold;
     position: absolute;
-    left: -30px;
-    
-    
+    left: -30px;   
 }
 
 /* NUTRITION */
 .table{
     display: flex;
-    margin: 20px 0 20px 64px;
+    margin: 20px 0 20px 32px;
 }
 
 .table p{
@@ -178,7 +177,6 @@ ul, ol{
 
 .mesure{
     font-weight: bold;
-    margin-left: -50px;
 }
 
 @media (max-width:1443px){
