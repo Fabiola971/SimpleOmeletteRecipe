@@ -19,9 +19,8 @@ h3, .preparation li::before{
     font-family: "Outfit", sans-serif;
 }
 
-hr{
-    color: hsl(30, 18%), 87%;
-    width: 105%;
+p{
+    line-height: 1.5;
 }
 
 p, li{
@@ -87,9 +86,7 @@ span{
 
 .preparation li:first-of-type::before{
     vertical-align: top;
-    line-height: 2;
-
-    
+    line-height: 2;    
 }
 
 .preparation li em{
@@ -102,8 +99,6 @@ span{
 ul, ol{
     padding-top: 15px;  
 }
-
-.ingredients ul{}
 
 .ingredients ul li{
     position: relative;
@@ -134,27 +129,23 @@ ul, ol{
 
 }
 
-
-
-.straigh{
-    width: 80%;
-    
-    border: 0.5px solid  hsl(32, 26%, 80%);
+.straight{
+    padding-inline: 30px;
 }
 /* INSTRUCTIONS */
 
 .instructions ol{
     list-style: none;
-    counter-reset: step;
-   
+    counter-reset: step;  
 }
 
 .instructions ol li{
     counter-increment: step;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 16px;
     position: relative;
-    left: 34px;    
+    left: 34px;
+    margin-inline-end: 25px;    
 }
 
 .instructions ol li::before{
@@ -166,6 +157,14 @@ ul, ol{
 }
 
 /* NUTRITION */
+.nutrition h2{
+    margin-bottom: 20px;
+}
+
+.nutrition p{
+    line-height: 1.5;
+}
+
 .table{
     display: flex;
     margin: 20px 0 20px 32px;
@@ -198,7 +197,7 @@ ul, ol{
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-}
+    }
 
    .header p{
         letter-spacing: -0.4px;
@@ -220,7 +219,6 @@ ul, ol{
    }
 
    .preparation li::before{
-        /* padding: 0 30px 0 5px; */
         font-size: 25px;
     }
 
@@ -229,7 +227,7 @@ ul, ol{
     }
 
     .ingredients {
-    line-height: 30px;
+        line-height: 30px;
     }
 
     .ingredients li::before{
