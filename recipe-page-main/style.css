@@ -6,8 +6,6 @@
 
 body{
     font-family: "Young Serif", serif;
-    /* padding: 30px; */
-    font-size: 34px;
 }
 
 h2, .mesure{
@@ -17,6 +15,10 @@ h2, .mesure{
 h3, .preparation li::before{
     color:  hsl(332, 51%, 32%);
     font-family: "Outfit", sans-serif;
+}
+
+main{
+    background-color:  hsl(0, 0%, 100%);
 }
 
 p{
@@ -36,21 +38,21 @@ span{
     font-weight: bold;
 }
 /*******************HEADER******************/
-.header img{
+.head img{
     width: 100%;
 }
 
-.header header{
+.head header{
     padding-bottom: 20px;
 }
 
-.header header h1{
+.head header h1{
     padding: 20px 28px;
     color: #000;
     font-size: 2em;
 }
 
-.header p{
+.head p{
     display: flex;
     flex-direction: column;
 }
@@ -178,7 +180,7 @@ ul, ol{
     font-weight: bold;
 }
 
-@media (max-width:1443px){
+@media (max-width:1339px){
    body{
         font-size: 16px;
    }
@@ -187,11 +189,11 @@ ul, ol{
     padding-inline: 30px;
    }
 
-   .header{
+   .head{
         padding: 0;
    }
 
-   .header header img{
+   .head header img{
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -199,7 +201,7 @@ ul, ol{
     -o-border-radius: 0;
     }
 
-   .header p{
+   .head p{
         letter-spacing: -0.4px;
         padding-inline-start: 30px;
         padding-inline-end: 50px;
@@ -211,7 +213,7 @@ ul, ol{
    }
 
    .preparation h3{
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
    }
    
    .preparation li{
@@ -235,6 +237,48 @@ ul, ol{
         left: -13px;
         padding-right: 7px;
         font-size: 10px;
+    }
+}
+
+@media (min-width:1000px){
+    body{
+        background-color: hsl(328, 61%, 94%);
+    }
+
+    main{
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin: 20%;
+    }
+
+    .head{
+        padding-top: 30px;
+    }
+
+   .head .headImg{
+        margin-inline: 30px;
+        max-width: 100%;
+    }
+
+    .head .headImg img{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .preparation li em{
+        position: relative;
+        top: 0;
+        left: 0;
+    }  
+    
+    .preparation li:first-of-type::before{
+        vertical-align: middle;  
     }
 }
 
