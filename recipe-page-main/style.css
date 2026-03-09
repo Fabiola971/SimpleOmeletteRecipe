@@ -120,7 +120,6 @@ ul, ol{
 
 .ingredients li:last-of-type::before{
    top: 15px;
-
 }
 
 .ingredients li em{
@@ -128,7 +127,6 @@ ul, ol{
     font-style: normal;
     position: relative;
     left: 23px;
-
 }
 
 .straight{
@@ -179,6 +177,59 @@ ul, ol{
 .mesure{
     font-weight: bold;
 }
+
+@media (min-width:1000px){
+    body{
+        background-color: hsl(328, 61%, 94%);
+    }
+
+    main{
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin: 20%;
+    }
+
+    .head{
+        padding-top: 30px;
+    }
+
+   .head .headImg{
+        margin-inline: 30px;
+        max-width: 100%;
+    }
+
+    .head .headImg img{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .preparation li em{
+        position: relative;
+        top: 0;
+        left: 0;
+    }  
+    
+    .preparation li:first-of-type::before{
+        vertical-align: middle; 
+        line-height: normal;
+    }
+
+    .ingredients li em{
+        display: inline;
+        position: static;    
+    }
+
+    .ingredients li:last-of-type::before{
+        top: 0;
+    }
+}
+
 
 @media (max-width:1339px){
    body{
@@ -240,45 +291,4 @@ ul, ol{
     }
 }
 
-@media (min-width:1000px){
-    body{
-        background-color: hsl(328, 61%, 94%);
-    }
-
-    main{
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        margin: 20%;
-    }
-
-    .head{
-        padding-top: 30px;
-    }
-
-   .head .headImg{
-        margin-inline: 30px;
-        max-width: 100%;
-    }
-
-    .head .headImg img{
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
-
-    .preparation li em{
-        position: relative;
-        top: 0;
-        left: 0;
-    }  
-    
-    .preparation li:first-of-type::before{
-        vertical-align: middle;  
-    }
-}
 
