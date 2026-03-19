@@ -1,292 +1,294 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;   
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Young Serif", serif;
+body {
+  font-family: "Young Serif", serif;
 }
 
-h2, .mesure{
-    color: hsl(14, 45%, 36%);
+h2,
+.mesure {
+  color: hsl(14, 45%, 36%);
 }
 
-h3, .preparation li::before{
-    color:  hsl(332, 51%, 32%);
-    font-family: "Outfit", sans-serif;
+h3,
+.preparation li::before {
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
 }
 
-main{
-    background-color:  hsl(0, 0%, 100%);
+main {
+  background-color: hsl(0, 0%, 100%);
 }
 
-p{
-    line-height: 1.5;
+p {
+  line-height: 1.5;
 }
 
-p, li{
-    font-family: "Outfit", sans-serif;
-    color: hsl(30, 10%, 34%);
+p,
+li {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
 }
 
-section{
-    padding: 20px 20px 20px 0;
+section {
+  padding: 20px 20px 20px 0;
 }
 
-span{
-    font-weight: bold;
+span {
+  font-weight: bold;
 }
 /*******************HEADER******************/
-.head img{
-    width: 100%;
+header,
+.headText {
+  padding-bottom: 20px;
 }
 
-.head header{
-    padding-bottom: 20px;
+.head .headImg img {
+  width: 100%;
 }
 
-.head header h1{
-    padding: 20px 28px;
-    color: #000;
-    font-size: 2em;
+.head .headText h1 {
+  padding: 20px 0;
+  color: #000;
+  /* font-size: 2em; */
 }
 
-.head p{
-    display: flex;
-    flex-direction: column;
+.head p {
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
-.preparation{
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    background-color: hsl(330, 100%, 98%);
-    padding: 20px 20px 20px 30px;
+.preparation {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px 20px 20px 30px;
 }
 
-.preparation ul, .ingredients ul{
-    list-style: none;
+.preparation ul,
+.ingredients ul {
+  list-style: none;
 }
 
-.preparation li::before{
-    content: "\2022";
-    display: inline-block;
-    vertical-align: sub;
-    padding: 0 20px 0 5px;
-    font-size: 25px;
+.preparation li::before {
+  content: "\2022";
+  display: inline-block;
+  vertical-align: sub;
+  padding: 0 20px 0 5px;
+  font-size: 25px;
 }
 
-
-
-.preparation li, .ingredient li{
-    padding: 10px; 
-    position: relative;   
+.preparation li,
+.ingredient li {
+  padding: 10px;
+  position: relative;
 }
 
-.preparation li:first-of-type::before{
-    vertical-align: top;
-    line-height: 2;    
+.preparation li:first-of-type::before {
+  vertical-align: top;
+  line-height: 2;
 }
 
-.preparation li em{
-    font-style: normal;
-    position: absolute;
-    top: 22px;
-    left: 34px;
+.preparation li em {
+  font-style: normal;
+  position: absolute;
+  top: 22px;
+  left: 34px;
 }
 /******************INGREDIENTS******/
-ul, ol{
-    padding-top: 15px;  
+ul,
+ol {
+  padding-top: 15px;
 }
 
-.ingredients ul li{
-    position: relative;
-    /* padding: 10px 40px 10px 10px; */
-    text-indent: -60px;
-    padding-left: 70px;
+.ingredients ul li {
+  position: relative;
+  text-indent: -60px;
+  padding-left: 70px;
 }
 
-.ingredients li::before{
-    content: "\25A0";
-    padding: 10px 40px 10px 10px;
-    color: hsl(14, 45%, 36%);
-    font-size: 15px;
-    position: relative;
-    top: -8px;
+.ingredients li::before {
+  content: "\25A0";
+  padding: 10px 40px 10px 10px;
+  color: hsl(14, 45%, 36%);
+  font-size: 15px;
+  position: relative;
+  top: -8px;
 }
 
-.ingredients li:last-of-type::before{
-   top: 15px;
+.ingredients li:last-of-type::before {
+  top: 15px;
 }
 
-.ingredients li em{
-    display: block;
-    font-style: normal;
-    position: relative;
-    left: 23px;
+.ingredients li em {
+  display: block;
+  font-style: normal;
+  position: relative;
+  left: 23px;
 }
 
-.straight{
-    padding-inline: 30px;
+.straight {
+  padding-inline: 30px;
 }
 /* INSTRUCTIONS */
 
-.instructions ol{
-    list-style: none;
-    counter-reset: step;  
+.instructions ol {
+  list-style: none;
+  counter-reset: step;
 }
 
-.instructions ol li{
-    counter-increment: step;
-    line-height: 1.5;
-    margin-bottom: 16px;
-    position: relative;
-    left: 34px;
-    margin-inline-end: 25px;    
+.instructions ol li {
+  counter-increment: step;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  position: relative;
+  left: 34px;
+  margin-inline-end: 25px;
 }
 
-.instructions ol li::before{
-    content: counter(step)".";
-    color: hsl(14, 45%, 36%);
-    font-weight: bold;
-    position: absolute;
-    left: -30px;   
+.instructions ol li::before {
+  content: counter(step) ".";
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+  position: absolute;
+  left: -30px;
 }
 
 /* NUTRITION */
-.nutrition h2{
-    margin-bottom: 20px;
+.nutrition h2 {
+  margin-bottom: 20px;
 }
 
-.nutrition p{
-    line-height: 1.5;
+.nutrition p {
+  line-height: 1.5;
 }
 
-.table{
-    display: flex;
-    margin: 20px 0 20px 32px;
+.table {
+  display: flex;
+  margin: 20px 0 20px 32px;
 }
 
-.table p{
-    width: 50%;
+.table p {
+  width: 50%;
 }
 
-.mesure{
-    font-weight: bold;
+.mesure {
+  font-weight: bold;
 }
 
-@media (min-width:1000px){
-    body{
-        background-color: hsl(328, 61%, 94%);
-    }
+@media (min-width: 1000px) {
+  body {
+    background-color: hsl(328, 61%, 94%);
+  }
 
-    main{
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        margin: 22% 18%;
-    }
+  main {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 20% 18%;
+  }
 
-    .head{
-        /* padding-top: 30px; */
-    }
+  .head .headImg {
+    padding: 30px 30px 0 30px;
+    max-width: 100%;
+  }
 
-   .head .headImg{
-        padding: 30px 30px 0 30px;
-        /* margin: 30px 30px 0 30px; */
-        /* margin-inline: 30px; */
-        max-width: 100%;
-    }
+  .head .headImg img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
 
-    .head .headImg img{
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
+  .preparation li em {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
-    .preparation li em{
-        position: relative;
-        top: 0;
-        left: 0;
-    }  
-    
-    .preparation li:first-of-type::before{
-        vertical-align: middle; 
-        line-height: normal;
-    }
+  .preparation li:first-of-type::before {
+    vertical-align: middle;
+    line-height: normal;
+  }
 
-    .ingredients li em{
-        display: inline;
-        position: static;    
-    }
+  .ingredients li em {
+    display: inline;
+    position: static;
+  }
 
-    .ingredients li:last-of-type::before{
-        top: 0;
-    }
+  .ingredients li:last-of-type::before {
+    top: 0;
+  }
 }
 
+@media (max-width: 1339px) {
+  body {
+    font-size: 16px;
+  }
 
-@media (max-width:1339px){
-   body{
-        font-size: 16px;
-   }
-
-   h1{
+  h1 {
     padding-inline: 30px;
-   }
+  }
 
-   .head{
-        padding: 0;
-   }
+  .head {
+    padding: 0;
+  }
 
-   .head header img{
+  .head header img {
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    }
+  }
 
-   .head p{
-        letter-spacing: -0.4px;
-        padding-inline-start: 30px;
-        padding-inline-end: 50px;
-   }
+  .head .headText {
+    padding-inline-start: 30px;
+    padding-inline-end: 50px;
+  }
 
-   .preparation{
-        margin-inline: 30px;
-        width: auto;
-   }
-   
-   .preparation li{
-        padding: 0;
-   }
+  .head p {
+    letter-spacing: -0.4px;
+    /* padding-inline-start: 30px; */
+    /* padding-inline-end: 50px; */
+  }
 
-   .preparation li::before{
-        font-size: 25px;
-    }
+  .preparation {
+    margin-inline: 30px;
+    width: auto;
+  }
 
-    .ingredients, .instructions, .nutrition{
-        margin-inline: 30px;
-    }
+  .preparation li {
+    padding: 0;
+  }
 
-    .ingredients {
-        line-height: 30px;
-    }
+  .preparation li::before {
+    font-size: 25px;
+  }
 
-    .ingredients li::before{
-        top: -2px;
-        left: -13px;
-        padding-right: 7px;
-        font-size: 10px;
-    }
+  .ingredients,
+  .instructions,
+  .nutrition {
+    margin-inline: 30px;
+  }
+
+  .ingredients {
+    line-height: 30px;
+  }
+
+  .ingredients li::before {
+    top: -2px;
+    left: -13px;
+    padding-right: 7px;
+    font-size: 10px;
+  }
 }
-
-
