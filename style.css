@@ -6,6 +6,7 @@
 
 body {
   font-family: "Young Serif", serif;
+  font-size: 1em;
 }
 
 h2,
@@ -30,7 +31,7 @@ li {
 }
 
 section {
-  padding: 20px 20px 20px 0;
+  padding: 1.25em 1.25em 1.25em 0;
 }
 
 span {
@@ -195,7 +196,8 @@ ol {
   font-weight: bold;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
+  /* 1000PX */
   body {
     background-color: hsl(328, 61%, 94%);
   }
@@ -274,11 +276,7 @@ ol {
   }
 }
 
-@media (max-width: 1339px) {
-  body {
-    /* font-size: 16px; */
-  }
-
+@media (max-width: 1399px) {
   h1 {
     padding-inline: 30px;
   }
@@ -314,5 +312,24 @@ ol {
     left: -13px;
     padding-right: 7px;
     font-size: 10px;
+  }
+}
+
+@media (min-width: 90em) {
+  /* 1440PX */
+  html {
+    font-size: 1.5vw;
+  }
+
+  .head .headText {
+    padding-inline-start: 0;
+  }
+
+  head .headText h1 {
+    font-size: 3.5vw;
+  }
+
+  .preparation {
+    margin-inline: 0;
   }
 }
